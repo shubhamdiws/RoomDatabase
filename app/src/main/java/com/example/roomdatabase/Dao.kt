@@ -16,5 +16,6 @@ interface Dao {
     suspend fun deleteAllUsers(ishita: Ishita)
 
     @Query("Select * from User")
+    // this get request
     fun getAllUsers() : LiveData<List<Ishita>>
 }
